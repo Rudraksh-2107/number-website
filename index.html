@@ -31,7 +31,74 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px);
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: clamp(20px, 5vw, 26px);
+    }
+
+    p {
+      font-size: clamp(14px, 4vw, 16px);
+      line-height: 1.6;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      margin-bottom: 16px;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #ff9800;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.1s ease, background 0.2s ease;
+    }
+
+    button:hover {
+      background: #ffc107;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    a {
+      color: #ffeb3b;
+      text-decoration: none;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Desktop enhancements */
+    @media (min-width: 768px) {
+      .screen {
+        padding: 32px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -91,3 +158,4 @@
 
 </body>
 </html>
+
